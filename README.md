@@ -1,4 +1,5 @@
 # Little Lemon Restaurant API
+![Coursera](https://img.shields.io/badge/Coursera-%230056D2.svg?style=for-the-badge&logo=Coursera&logoColor=white)
 A restful API that exposes a restaurant menu items with ability to add and update dishes along displaying the menu list also it provides booking tables 
 to authenticated  users, you can register and login as a user through token based authentication.
 ## URLS Available:
