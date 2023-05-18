@@ -30,3 +30,37 @@ to authenticated  users, you can register and login as a user through token base
  - **POST**: auth/token/login: generate a token for a user
 
 ## Installation and Running The Project:
+- Installing Python if it's not already setup used Version is 3.11
+-  Setting up the virtual environment using pipenv:
+
+```jsx
+pipenv install
+```
+- the required packages : django, djangorestframework, mysqlclient, djoser
+- Running pipenv Virtual Environment:
+
+```jsx
+pipenv shell
+```
+- the configuration for mysql Database Connection:
+
+```jsx
+DATABASES = {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'LittleLemon',
+        'USER': 'root',
+        'PASSWORD': 'root@123',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'OPTIONS':{
+            'init_command':"SET sql_mode='STRICT_TRANS_TABLES'"
+        }
+    },
+}
+```
+💡 Change those settings according to your local setup.
+- Running the server:
+
+```jsx
+python manage runserver
+```
